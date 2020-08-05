@@ -10,7 +10,7 @@ from commands.buttonhandler import button
 def start(bot, update):
     chat_id = update.message.chat.id
     keyboard = [[
-        InlineKeyboardButton('Support Chat',
+        InlineKeyboardButton('SUPPORT CHAT',
                              url=config.supportChatUrl)
     ],
         [
@@ -19,18 +19,18 @@ def start(bot, update):
         ]]
     reply_markup = InlineKeyboardMarkup(keyboard)
     bot.sendMessage(chat_id, "<b>Hi, I Can Search Torrent Database For Your Query😎😎.</b>\n\n"
-                             "Supports Inline Mode \n-/help For More Info\n",
+                             "<b>Supports Inline Mode</b> \n👉 type /help For More Info\n",
                     parse_mode='HTML',
                     reply_markup=reply_markup)
 
 def help(bot, update):
     chat_id = update.message.chat.id
     keyboard = [[
-        InlineKeyboardButton('Support Chat',
+        InlineKeyboardButton('SUPPORT CHAT',
                              url=config.supportChatUrl)
     ],
         [
-            InlineKeyboardButton('Android App Link',
+            InlineKeyboardButton('UPDATE CHANNEL',
                                  url=config.appUrl)
         ]]
     reply_markup = InlineKeyboardMarkup(keyboard)
