@@ -18,7 +18,7 @@ def start(bot, update):
                                  url=config.appUrl)
         ]]
     reply_markup = InlineKeyboardMarkup(keyboard)
-    bot.sendMessage(chat_id, "<b>Hi, I Can Search Torrent Database For Your Query.</b>\n\n"
+    bot.sendMessage(chat_id, "<b>Hi, I Can Search Torrent Database For Your Query😎😎.</b>\n\n"
                              "Supports Inline Mode \n-/help For More Info\n",
                     parse_mode='HTML',
                     reply_markup=reply_markup)
@@ -34,8 +34,9 @@ def help(bot, update):
                                  url=config.appUrl)
         ]]
     reply_markup = InlineKeyboardMarkup(keyboard)
-    bot.sendMessage(chat_id, "<b>Available commands are: </b>\n" +
-                    "-/find - <code>Searches Torrent Database</code>\n"
+    bot.sendMessage(chat_id, "<b>Available commands are👇: </b>\n" +
+                    "Example 👉 /find - <code>Avengers Endgame</code>\n"
+                    
                     "Ask/Report In Support Group If You Have Any Problem With This Bot. Kthnxbye",
                     parse_mode='HTML',
                     reply_markup=reply_markup)
