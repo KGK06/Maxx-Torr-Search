@@ -14,7 +14,7 @@ def start(bot, update):
                              url=config.supportChatUrl)
     ],
         [
-            InlineKeyboardButton('Android App Link',
+            InlineKeyboardButton('UPDATE CHANNEL',
                                  url=config.appUrl)
         ]]
     reply_markup = InlineKeyboardMarkup(keyboard)
@@ -37,7 +37,7 @@ def help(bot, update):
     bot.sendMessage(chat_id, "<b>Available commands are👇: </b>\n" +
                     "Example 👉 /find - <code>Avengers Endgame</code>\n"
                     
-                    "Ask/Report In Support Group If You Have Any Problem With This Bot. Kthnxbye",
+                    "Ask/Report In Support Group If You Have Any Problem With This Bot.👉 @MaxxRider",
                     parse_mode='HTML',
                     reply_markup=reply_markup)
 
