@@ -10,34 +10,34 @@ from commands.buttonhandler import button
 def start(bot, update):
     chat_id = update.message.chat.id
     keyboard = [[
-        InlineKeyboardButton('SUPPORT CHAT',
+        InlineKeyboardButton('📫SUPPORT CHAT📫',
                              url=config.supportChatUrl)
     ],
         [
-            InlineKeyboardButton('UPDATE CHANNEL',
+            InlineKeyboardButton('📌UPDATE CHANNEL📌',
                                  url=config.appUrl)
         ]]
     reply_markup = InlineKeyboardMarkup(keyboard)
-    bot.sendMessage(chat_id, "<b>Hi, I Can Search Torrent Database For Your Query😎😎.</b>\n\n"
-                             "<b>Supports Inline Mode</b> \n👉 type /help For More Info\n",
+    bot.sendMessage(chat_id, "<b>Hey Bruh, I am Torrent Searcher Bot.\nI Can Search Torrent Database For Your Query😎😎.</b>\n\n"
+                             "<b>Need Any Help For Use Me??</b> \n👉 type /help For More Info\n",
                     parse_mode='HTML',
                     reply_markup=reply_markup)
 
 def help(bot, update):
     chat_id = update.message.chat.id
     keyboard = [[
-        InlineKeyboardButton('SUPPORT CHAT',
+        InlineKeyboardButton('📫SUPPORT CHAT📫',
                              url=config.supportChatUrl)
     ],
         [
-            InlineKeyboardButton('UPDATE CHANNEL',
+            InlineKeyboardButton('📌UPDATE CHANNEL📌',
                                  url=config.appUrl)
         ]]
     reply_markup = InlineKeyboardMarkup(keyboard)
-    bot.sendMessage(chat_id, "<b>Available commands are👇: </b>\n" +
-                    "Example 👉 /find - <code>Avengers Endgame</code>\n"
+    bot.sendMessage(chat_id, "<b>Following These Steps👇: </b>\n" +
+                    "Example:👉 <code>/find Avengers Endgame</code>\n"
                     
-                    "Ask/Report In Support Group If You Have Any Problem With This Bot.👉 @MaxxRider",
+                    "If you get any issue ! Then Report to @MaxxBotChat",
                     parse_mode='HTML',
                     reply_markup=reply_markup)
 
