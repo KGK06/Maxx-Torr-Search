@@ -25,8 +25,8 @@ def search_query(bot, update, args):
         ])
 
     reply_markup = InlineKeyboardMarkup(keyboard)
-    message = bot.sendMessage(chat_id, "<b>🔍Search Query Results:👇</b>\n"
-                                       "<pre>Search Query : </pre>" + "<i>" + search_query + "</i>\n",
+    message = bot.sendMessage(chat_id, "<b>🔍 Search Results Of Query :👇🏻👇🏻</b>\n"
+                                       "<b> Your Search Query </b>" + "<pre>" + search_query + "</pre>\n",
                               parse_mode='HTML',
                               reply_markup=reply_markup,
                               reply_to_message_id=update.message.message_id,
