@@ -10,34 +10,34 @@ from commands.buttonhandler import button
 def start(bot, update):
     chat_id = update.message.chat.id
     keyboard = [[
-        InlineKeyboardButton('📫SUPPORT CHAT📫',
+        InlineKeyboardButton('👤 SUPPORT CHAT 👤',
                              url=config.supportChatUrl)
     ],
         [
-            InlineKeyboardButton('📌UPDATE CHANNEL📌',
+            InlineKeyboardButton('📬 UPDATE CHANNEL 📬',
                                  url=config.appUrl)
         ]]
     reply_markup = InlineKeyboardMarkup(keyboard)
-    bot.sendMessage(chat_id, "<b>Hey Bruh, I am Torrent Searcher Bot.\nI Can Search Torrent Database For Your Query😎😎.</b>\n\n"
-                             "<b>Need Any Help For Use Me??</b> \n👉 type /help For More Info\n",
+    bot.sendMessage(chat_id, "<b>Hey.! This Is @MeGTorrFindBot.\nI Can Search Torrent's In My Database For Your Query 😎.</b>\n\n"
+                             "<b>Need Any Help to Use Me..??</b> \n👉🏻Then Type /help For More Info\n",
                     parse_mode='HTML',
                     reply_markup=reply_markup)
 
 def help(bot, update):
     chat_id = update.message.chat.id
     keyboard = [[
-        InlineKeyboardButton('📫SUPPORT CHAT📫',
+        InlineKeyboardButton('👤 SUPPORT CHAT 👤',
                              url=config.supportChatUrl)
     ],
         [
-            InlineKeyboardButton('📌UPDATE CHANNEL📌',
+            InlineKeyboardButton('📬 Projects Channel 📬',
                                  url=config.appUrl)
         ]]
     reply_markup = InlineKeyboardMarkup(keyboard)
     bot.sendMessage(chat_id, "<b>Following These Steps👇: </b>\n" +
-                    "Example:👉 <code>/find Avengers Endgame</code>\n"
+                    "Example:👉 <code>/search Iron Man</code> 😜😜\n"
                     
-                    "If you get any issue ! Then Report to @MaxxBotChat",
+                    "<b>If you get any issue ! Then Report to @MaeGBotsChat</b>",
                     parse_mode='HTML',
                     reply_markup=reply_markup)
 
@@ -51,7 +51,7 @@ def main():
 
     logger = logging.getLogger(__name__)
 
-    dp.add_handler(CommandHandler('find', search_query, pass_args=True))
+    dp.add_handler(CommandHandler('search', search_query, pass_args=True))
     dp.add_handler(CommandHandler('start', start))
     dp.add_handler(CommandHandler('help', help))
     dp.add_handler(CallbackQueryHandler(button))
